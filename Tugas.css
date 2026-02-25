@@ -1,0 +1,58 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-img {
+    border: 8px solid #f8f9fa;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.badge {
+    padding: 10px 15px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* Styling khusus bulatan foto di Hero Section */
+.hero-mini-img {
+    width: 200px; /* Ukuran bulatan */
+    height: 200px;
+    object-fit: cover; /* Agar foto tidak gepeng */
+    border: 5px solid rgba(255, 255, 255, 0.2); /* Frame tipis transparan */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Bayangan halus */
+    transition: transform 0.3s ease;
+}
+
+.hero-mini-img:hover {
+    transform: scale(1.05); /* Efek membesar sedikit saat kursor lewat */
+    border-color: #ffc107; /* Berubah jadi warna kuning warning saat hover */
+}
+
+/* Penyesuaian responsif untuk mobile */
+@media (max-width: 768px) {
+    .hero-mini-img {
+        width: 150px;
+        height: 150px;
+    }
+}
